@@ -78,7 +78,7 @@ class Purchase {
 }
 
 
-public class INTERNAL_REMEDIAL {
+public class INTERNAL_REMEDIAL_pr_1 {
     public static void main(String[] args) {
         java.util.Scanner scanner = new java.util.Scanner(System.in);
         int N = scanner.nextInt();
@@ -102,47 +102,4 @@ public class INTERNAL_REMEDIAL {
         System.out.println("Total receipts: " + Purchase.getTotalPurchases() + ", Total revenue: " + Purchase.getTotalRevenue());
     }
 }
-// Input Format
-// Line 1: an integer N, the number of purchases.
-// Next N lines: a code (a single uppercase letter) and a quantity (an integer), separated by a space.
-// Output Format
-// For each valid purchase: Receipt <receiptNo>: <ProductName> x <quantity> = <amount>
-// For each invalid purchase: Invalid item: <code> <quantity>
-// Last line: Total receipts: <count>, Total revenue: <amount>
-
-// Constraints
-// 1 ≤ N ≤ 20
-// −100 ≤ quantity ≤ 100
-
-// Sample Input 0
-// 5
-// N 2
-// P 5
-// Z 1
-// M 0
-// F 3
-// Sample Output 0
-// Receipt 201: Notebook x 2 = 90
-// Receipt 202: Pen x 5 = 50
-// Invalid item: Z 1
-// Invalid item: M 0
-// Receipt 203: File x 3 = 90
-// Total receipts: 3, Total revenue: 230
-// Explanation: Z is not on the price list and M has quantity 0, so neither gets a receipt number. The receipt numbers therefore stay continuous: 201, 202, 203.
-
-// Sample Input 1
-// 4
-// M 4
-// N 1
-// F 2
-// P -3
-// Sample Output 1
-// Receipt 201: Marker x 4 = 100
-// Receipt 202: Notebook x 1 = 45
-// Receipt 203: File x 2 = 60
-// Invalid item: P -3
-// Total receipts: 3, Total revenue: 205
-
-
-
 
